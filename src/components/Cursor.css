@@ -1,0 +1,28 @@
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #8B5CF6;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s, background-color 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor.hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: rgba(139, 92, 246, 0.2);
+}
+
+.custom-cursor.clicked {
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: #FBBF24;
+  border-color: #FBBF24;
+}
+
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}

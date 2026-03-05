@@ -1,0 +1,166 @@
+/* Skeleton Animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: pulse 1.5s ease-in-out infinite, shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Feature Card Skeleton */
+.skeleton-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  height: 250px;
+}
+
+.skeleton-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  background: #e0e0e0;
+}
+
+.skeleton-title {
+  width: 60%;
+  height: 24px;
+  margin: 0 auto 1rem;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+.skeleton-line {
+  width: 90%;
+  height: 16px;
+  margin: 0.5rem auto;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+.skeleton-line.short {
+  width: 60%;
+}
+
+/* Testimonial Skeleton */
+.skeleton-testimonial {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  height: 200px;
+}
+
+.skeleton-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  background: #e0e0e0;
+}
+
+.skeleton-name {
+  width: 40%;
+  height: 20px;
+  margin: 0 auto 1rem;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+.skeleton-quote {
+  width: 95%;
+  height: 14px;
+  margin: 0.5rem auto;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+/* Pricing Skeleton */
+.skeleton-pricing {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  height: 350px;
+}
+
+.skeleton-plan {
+  width: 50%;
+  height: 30px;
+  margin: 0 auto 0.5rem;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+.skeleton-price {
+  width: 40%;
+  height: 40px;
+  margin: 0 auto 1.5rem;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+.skeleton-feature {
+  width: 80%;
+  height: 18px;
+  margin: 0.8rem auto;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+.skeleton-button {
+  width: 60%;
+  height: 40px;
+  margin: 1.5rem auto 0;
+  border-radius: 20px;
+  background: #e0e0e0;
+}
+
+/* Dark mode support */
+.dark .skeleton-card,
+.dark .skeleton-testimonial,
+.dark .skeleton-pricing {
+  background: #2d2d2d;
+}
+
+.dark .pulse {
+  background: linear-gradient(
+    90deg,
+    #3d3d3d 25%,
+    #4d4d4d 50%,
+    #3d3d3d 75%
+  );
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skeleton-card,
+  .skeleton-testimonial,
+  .skeleton-pricing {
+    padding: 1rem;
+  }
+}
