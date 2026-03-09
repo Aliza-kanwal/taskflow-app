@@ -16,9 +16,6 @@ function Cursor() {
     const handleMouseLeave = () => setHidden(true);
     const handleMouseEnter = () => setHidden(false);
 
-    const handleLinkHoverStart = () => setLinkHover(true);
-    const handleLinkHoverEnd = () => setLinkHover(false);
-
     document.addEventListener('mousemove', updatePosition);
     document.addEventListener('mousedown', handleMouseDown);
     document.addEventListener('mouseup', handleMouseUp);
